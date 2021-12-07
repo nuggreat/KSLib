@@ -103,8 +103,8 @@ function sort{
     if lo<hi{local p is pt(A, lo, hi). qs(A, lo, p). qs(A, p + 1, hi).}}
   function pt{parameter A, lo, hi, pivot is A[lo], i is lo-1, j is hi+1.
     until 0 {
-      until 0 {set j to j-1. if c(A[j],pivot)<=0 break.}
-      until 0 {set i to i+1. if c(A[i],pivot)>=0 break.}
+      until 0 {set j to j-1. if j<lo or c(A[j],pivot)<=0 break.}
+      until 0 {set i to i+1. if i>hi or c(A[i],pivot)>=0 break.}
       if i<j{local s is A[i]. set A[i] to A[j]. set A[j] to s.} else return j.
     }
   }
