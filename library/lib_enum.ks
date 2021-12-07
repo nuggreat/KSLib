@@ -1,5 +1,5 @@
 // lib_enum.ks provides a set of functions for manipulating lists, queues, and stacks using the new delegates syntax introduced in kOS version 0.19.0.
-// Copyright © 2015,2016 KSLib team 
+// Copyright © 2015,2016,2021 KSLib team 
 // Lic. MIT
 
 {global Enum is lex(
